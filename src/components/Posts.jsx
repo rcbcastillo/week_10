@@ -1,30 +1,22 @@
-
-import {useState, useEffect} from 'react';
-import { getPosts } from "../api";
+import {posts} from './data/posts.js'
 
 const Posts = () => {
-  const [posts, setPosts] = useState([]);
- 
+  
 
-  useEffect(() => {
-    getPosts().then((posts) => setPosts(posts));
-  }, []);
-
-  if (posts) {
-    console.log(posts);
-    return (
-      <div>
-      <ul>
-        {posts.map((user, key) => (
-          <li key={key}>
-            <p>{user.title}</p>
-            <p></p>
-          </li>
-        ))}
-      </ul>
-    </div>
-    );
-  }
+  return (
+    <div>
+    <ul>
+      {posts.map((user, key) => (
+        <li key={key}>
+          <p>{user.id}</p>
+          <p>{user.title}</p>
+          <p>{user.body}</p>
+          <p></p>
+        </li>
+      ))}
+    </ul>
+  </div>
+  );
 };
 
 export default Posts;
