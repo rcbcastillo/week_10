@@ -17,7 +17,7 @@ const Users = () => {
                      <Link to="/users/3">User 3</Link>
                  </li>
              </ul>
-             <p>{id}</p>
+             <p> I am the selected user: {id}</p>
     </>
   )
 }
