@@ -12,7 +12,16 @@ const Nav =() => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/posts"><Posts/></Link>
+          <Link to="/albums">Albums</Link>
+        </li>
+        <li>
+          <Link to="/comments">Comments</Link>
+        </li>
+        <li>
+          <Link to="/photos">Photos</Link>
+        </li>
+        <li>
+          <Link to="/posts">Posts</Link>
         </li>
         <li>
           <Link to="/contact">Contact us</Link>

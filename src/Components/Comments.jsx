@@ -1,11 +1,12 @@
-import albums from '../Components/data/albums.json';
+import comments from '../Components/data/comments.json';
 import {Table} from 'reactstrap';
 
-const Albums = () => {
-  const myData = albums[0];
+const Comments = () => {
+  const myData = comments[0];
+  console.log(myData);
   const myKey = Object.keys(myData);
 
-  return (
+  return(
     <>
     <Table>
       <thead>
@@ -16,7 +17,7 @@ const Albums = () => {
         </tr>
       </thead>
       <tbody>
-        {albums.map((data, index)=> (
+        {comments.map((data, index)=> (
           <tr key={index}>
             {myKey.map((key, index)=>(
               <td key={index}>{data[key]}</td>
@@ -29,4 +30,4 @@ const Albums = () => {
   );
 };
 
-export default Albums;
+export default Comments;

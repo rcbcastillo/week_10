@@ -1,11 +1,11 @@
-import albums from '../Components/data/albums.json';
+import photos from '../Components/data/photos.json';
 import {Table} from 'reactstrap';
 
-const Albums = () => {
-  const myData = albums[0];
+const Photos = () => {
+  const myData = photos[0];
   const myKey = Object.keys(myData);
 
-  return (
+  return(
     <>
     <Table>
       <thead>
@@ -16,7 +16,7 @@ const Albums = () => {
         </tr>
       </thead>
       <tbody>
-        {albums.map((data, index)=> (
+        {photos.map((data, index)=> (
           <tr key={index}>
             {myKey.map((key, index)=>(
               <td key={index}>{data[key]}</td>
@@ -29,4 +29,4 @@ const Albums = () => {
   );
 };
 
-export default Albums;
+export default Photos;
