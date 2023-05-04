@@ -7,14 +7,15 @@ import Albums from './Components/Albums';
 import Comments from './Components/Comments';
 import Photos from './Components/Photos';
 import Todos from './Components/Todos';
-import Users from './Components/Users';
 import Contact from './Components/Contact';
 import About from './Components/About'
 import NotFound from './Components/NotFound';
+import Users from './Components/Users';
 
 function App() {
   return (
     <>
+      <Users />
       <BrowserRouter>
         <Nav />
         <Route path="/" exact><Home /></Route>
@@ -24,7 +25,6 @@ function App() {
         <Route path="/comments" ><Comments /></Route>
         <Route path="/photos" ><Photos /></Route>
         <Route path="/todos" ><Todos /></Route>
-        <Route path="/users" ><Users /></Route>
         <Route path="/contact"><Contact /></Route>
         <Route path="/404"><NotFound /></Route>
       </BrowserRouter>
