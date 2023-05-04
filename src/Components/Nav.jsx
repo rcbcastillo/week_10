@@ -24,6 +24,9 @@ const Nav =() => {
           <Link to="/posts">Posts</Link>
         </li>
         <li>
+          <Link to="/todos">Todos</Link>
+        </li>
+        <li>
           <Link to="/contact">Contact us</Link>
         </li>
         <li>
