@@ -7,6 +7,7 @@ const Albums = () => {
 
   return (
     <>
+    <h1>Table: Albums</h1>
     <Table>
       <thead>
         <tr>

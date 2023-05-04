@@ -5,6 +5,7 @@ const Users = () => {
 
   return(
     <>
+    <h1>Table: Users</h1>
     <Table>
       <thead>
         <tr>

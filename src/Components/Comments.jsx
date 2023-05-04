@@ -8,6 +8,7 @@ const Comments = () => {
 
   return(
     <>
+    <h1>Table: Comments</h1>
     <Table>
       <thead>
         <tr>

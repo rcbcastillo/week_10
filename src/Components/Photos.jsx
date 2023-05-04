@@ -7,6 +7,7 @@ const Photos = () => {
 
   return(
     <>
+    <h1>Table: Photos</h1>
     <Table>
       <thead>
         <tr>

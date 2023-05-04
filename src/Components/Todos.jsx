@@ -7,6 +7,7 @@ const Todos = () => {
 
   return(
     <>
+    <h1>Table: Todos</h1>
     <Table>
       <thead>
         <tr>

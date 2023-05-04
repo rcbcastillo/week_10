@@ -7,6 +7,7 @@ const Posts = () => {
 
   return(
     <>
+    <h1>Table: Posts</h1>
     <Table>
       <thead>
         <tr>

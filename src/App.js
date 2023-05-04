@@ -11,11 +11,11 @@ import Contact from './Components/Contact';
 import About from './Components/About'
 import NotFound from './Components/NotFound';
 import Users from './Components/Users';
+import MovieSearch from './Components/MovieSearch';
 
 function App() {
   return (
     <>
-      <Users />
       <BrowserRouter>
         <Nav />
         <Route path="/" exact><Home /></Route>
@@ -25,6 +25,7 @@ function App() {
         <Route path="/comments" ><Comments /></Route>
         <Route path="/photos" ><Photos /></Route>
         <Route path="/todos" ><Todos /></Route>
+        <Route path="/movieSearch" ><MovieSearch /></Route>
         <Route path="/contact"><Contact /></Route>
         <Route path="/404"><NotFound /></Route>
       </BrowserRouter>
